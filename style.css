@@ -1,0 +1,187 @@
+* {
+    margin:0;
+    padding:0;
+}
+
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f4e4ba;
+}
+
+
+.container{
+    background-color: #fff;
+    padding:2rem;
+    border-radius: 1rem;
+    min-height: 70vh;
+    width: 120vh;
+    border: 2px dashed blue;
+}
+
+
+
+form{
+    margin: 2rem 0 1rem 0;
+}
+form select,input,button{
+    width: 100%;
+    border:none;
+    outline: none;
+    border-radius: 0.75rem;
+}
+form input{
+    border: 1px solid lightgray;
+    font-size: 1rem;
+    height: 3rem;
+    padding-left: 0.5rem;
+}
+
+
+.dropdown{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+}
+.dropdown i{
+    font-size: 2rem;
+    margin-top: 1rem;
+}
+
+.select-container img{
+max-width: 5rem;
+}
+.select-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20rem;
+    border-radius: 0.5rem;
+    border: 1px solid lightgray;
+}
+.select-container select{
+    font-size: 1rem;
+    width: auto;
+}
+
+
+
+.amount input:hover {
+    border: 2px solid skyblue;
+}
+
+.msg{
+    margin: 4rem 0 2rem 0;
+    font-size: 1.5rem;
+}
+
+form button{
+    height: 3rem;
+    background-color: #af4d9f;
+    color: #fff;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* animation's added */
+/* Container fade + slide */
+.converter-box {
+    animation: fadeSlide 0.9s ease-out;
+}
+
+@keyframes fadeSlide {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+input[type="number"], select {
+    transition: 0.3s ease;
+}
+
+input[type="number"]:focus, select:focus {
+    box-shadow: 0 0 10px rgba(138, 43, 226, 0.4);
+    transform: scale(1.02);
+    border-color: #8a2be2;
+}
+
+
+
+
+form button {
+    transition: transform 0.25s ease, background 0.35s ease;
+}
+
+form button:hover {
+    transform: translateY(-3px);
+    background: linear-gradient(90deg, #8a2be2, #d63384);
+    cursor: pointer;
+}
+
+
+
+
+
+.currency-flag {
+    width: 40px;
+    height: 28px;
+    border-radius: 4px;
+    transition: opacity 0.3s ease;
+    opacity: 0;
+}
+
+.currency-flag.loaded {
+    opacity: 1;
+}
+
+
+
+
+
+.msg {
+    font-size: 1.2rem;
+    margin-top: 20px;
+    animation: pop 0.3s ease-out;
+}
+
+@keyframes pop {
+    0% { transform: scale(0.8); opacity: 0; }
+    100% { transform: scale(1); opacity: 1; }
+}
+
+
+
+
+.title-with-img {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* space between text and image */
+}
+
+.title-with-img img {
+    width: 40px;   /* adjust size */
+    height: auto;
+    border-radius: 6px; /* optional */
+}
+
+
+
+
+
+
+
+
+
+
