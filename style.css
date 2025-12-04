@@ -19,7 +19,8 @@ body {
     padding:2rem;
     border-radius: 1rem;
     min-height: 70vh;
-    width: 120vh;
+    width: 90%;
+    max-width:500px;
     border: 2px dashed blue;
 }
 
@@ -175,6 +176,7 @@ form button:hover {
     height: auto;
     border-radius: 6px; /* optional */
 }
+
 
 
 
